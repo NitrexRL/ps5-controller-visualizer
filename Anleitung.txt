@@ -1,0 +1,30 @@
+Zum start neu: cd dein-overlay-ordner
+npm install
+npm start
+
+
+
+falls fehler: npm run
+
+Oft sind Overlays heutzutage mit Vite erstellt. Dann lautet der Startbefehl: npm run dev
+
+
+
+
+am schluss: cd "C:\Users\nicob\Desktop\Galaxy Overlay"
+npm run dev -- --host
+
+
+
+alles in powershell
+
+
+
+
+
+
+
+
+
+
+
