@@ -28,7 +28,7 @@ body {
 
 /* Main controller image */
 .controller.ps5 {
-  background: url(Hexagon.png);
+  background: url(Hexagon2.png);
   width: 807px;
   height: 651px;
   margin-left: 0;
@@ -307,21 +307,24 @@ body {
 /* PS button indicator */
 .ps5 .ps {
   position: absolute;
-  left: 373px; /* applied from OBS ALT move */
-  top: 345px; /* applied from OBS ALT move */
+  left: 374px;
+top: 315px;
   width: 60px;
   height: 60px;
-  background-image: url('/Images/PS_Color.png');
+  background-image: url(PS_Color.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  background-color: transparent;
+  border-radius: 0;
   opacity: 0;
-  transition: opacity 0.05s ease-out, transform 0.05s ease-out, filter 0.05s ease-out;
-  z-index: 3;
+  z-index: 9999;
 }
 
-.ps5 .ps.active {
-  opacity: 1;
-  transform: translateY(1px);
-  filter: none;
+.ps5 .ps.active,
+.ps5 .ps.pressed {
+  opacity: 1 !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  filter: drop-shadow(0 0 12px white);
 }

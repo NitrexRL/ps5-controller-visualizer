@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite';
 
-export default defineConfig({
-  base: '/Nitrex-Controller/',
-});
+export default {
+  base: "/Nitrex-Controller/",
+}

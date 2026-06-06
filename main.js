@@ -69,8 +69,9 @@ const updateUI = (gamepad) => {
         toggle(ui.gv.touchpad, touchpadPressed);
 
         // PS button indicator
-        const psPressed = getButton(MAPPING.BUTTONS.PS).pressed;
-        toggle(ui.gv.ps, psPressed);
+ const psPressed = getButton(MAPPING.BUTTONS.PS).pressed;
+toggle(ui.gv.ps, psPressed);
+if (ui.gv.ps) ui.gv.ps.classList.toggle('pressed', psPressed);
 
         // Bumpers
         const lbPressed = getButton(MAPPING.BUTTONS.L1).pressed;

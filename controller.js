@@ -40,14 +40,15 @@ export const MAPPING = {
         R2: 7,
         SHARE: 8,
         OPTIONS: 9,
-        L3: 10,
-        R3: 11,
-        UP: 12,
-        DOWN: 13,
-        LEFT: 14,
-        RIGHT: 15,
-        PS: 16,
-        TOUCHPAD: 17
+ L3: 10,
+    R3: 11,
+    UP: 12,
+    DOWN: 13,
+    LEFT: 14,
+    RIGHT: 15,
+    PS: 16,
+    TOUCHPAD: 17,
+
     },
     AXES: {
         LEFT_X: 0,
