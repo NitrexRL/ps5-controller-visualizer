@@ -28,7 +28,19 @@ body {
 
 /* Main controller image */
 .controller.ps5 {
-  background: url(Hexagon.png);
+  /*
+    FINAL STATIC DESIGN:
+    Export your finished 807x651 PNG with the exact original geometry as:
+    Nitrex_Final_807x651.png
+
+    Important:
+    This CSS keeps all button/stick/trigger positions from your original overlay.
+    Only the controller base image is swapped.
+  */
+  background-image: url("Nitrex_Final_807x651.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 807px 651px;
   width: 807px;
   height: 651px;
   margin-left: 0;
@@ -46,11 +58,13 @@ body {
 }
 
 .ps5 .stick {
-  background: url(sticksweis.png);
+  /* Original sticks from your overlay: do not replace, do not resize. */
+  background: url("sticksweis.png");
   width: 100px;
   height: 100px;
   position: absolute;
   transition: transform 0.05s linear;
+  z-index: 4;
 }
 
 .ps5 .stick.pressed {
@@ -72,12 +86,14 @@ body {
 }
 
 .ps5 .button {
+  /* Active action-button sprites only. Static buttons are in the 807x651 base PNG. */
   background: url(https://i.imgur.com/DVqDSsJ.png);
   width: 58px;
   height: 58px;
   position: absolute;
   opacity: 0;
   transition: opacity 0.05s ease-out, transform 0.05s ease-out, filter 0.05s ease-out;
+  z-index: 5;
 }
 
 .ps5 .button.pressed {
@@ -131,11 +147,18 @@ body {
 
 .ps5 .back,
 .ps5 .start {
+  /*
+    Active Share/Options sprites only.
+    The static symbols must be drawn correctly inside Nitrex_Final_807x651.png:
+    left = original Share symbol
+    right = original Options symbol with three horizontal lines
+  */
   background: url(https://i.imgur.com/YJRVQxC.png);
   width: 27px;
   height: 57px;
   opacity: 0;
   position: absolute;
+  z-index: 5;
 }
 
 .ps5 .start {
@@ -161,10 +184,12 @@ body {
 }
 
 .ps5 .face {
+  /* Active D-pad sprites only. Static D-pad is in the 807x651 base PNG. */
   background: url(https://i.imgur.com/hCmzXWK.png);
   position: absolute;
   opacity: 0;
   transition: opacity 0.05s ease-out, transform 0.05s ease-out;
+  z-index: 5;
 }
 
 /* Show and slightly move d-pad arrows when active/pressed */
@@ -292,8 +317,8 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: rgba(45, 90, 240, 0.85);
-  box-shadow: 0 0 10px rgba(45, 90, 240, 0.6);
+  background: rgba(255, 63, 157, 0.85);
+  box-shadow: 0 0 10px rgba(255, 63, 157, 0.6);
   opacity: 0;
   transition: opacity 0.05s ease-out, transform 0.05s ease-out, filter 0.05s ease-out;
   z-index: 3;
