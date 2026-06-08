@@ -72,7 +72,7 @@ body {
 }
 
 .ps5 .button {
-  background: url(https://i.imgur.com/DVqDSsJ.png);
+  background: url(NitrexButton.png);
   width: 58px;
   height: 58px;
   position: absolute;
@@ -131,7 +131,7 @@ body {
 
 .ps5 .back,
 .ps5 .start {
-  background: url(https://i.imgur.com/YJRVQxC.png);
+  background: url(Nitrexmenu.png);
   width: 27px;
   height: 57px;
   opacity: 0;
@@ -161,7 +161,7 @@ body {
 }
 
 .ps5 .face {
-  background: url(https://i.imgur.com/hCmzXWK.png);
+  background: url(Nitrexpfeil.png);
   position: absolute;
   opacity: 0;
   transition: opacity 0.05s ease-out, transform 0.05s ease-out;
@@ -215,7 +215,7 @@ body {
 }
 
 .ps5 .bumper {
-  background: url(https://i.imgur.com/2YssqRT.png);
+  background: url(Nitrexbumper.png);
   width: 110px;
   height: 35px;
   opacity: 0;
@@ -260,7 +260,7 @@ body {
 }
 
 .ps5 .trigger {
-  background: url(https://i.imgur.com/LsxmGBD.png);
+  background: url(Nitrextrigger.png);
   width: 111px;
   height: 108px;
   opacity: 0;
